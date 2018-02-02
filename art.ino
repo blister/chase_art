@@ -59,11 +59,11 @@ void setup() {
 	delay(500);
 	digitalWrite(out2, LOW);
 
-	delay(500);
+	delay(1000);
 	digitalWrite(out1, HIGH);
 	digitalWrite(out2, HIGH);
 	digitalWrite(out3, HIGH);
-	delay(500);
+	delay(1000);
 	digitalWrite(out1, LOW);
 	digitalWrite(out2, LOW);
 	digitalWrite(out3, LOW);
