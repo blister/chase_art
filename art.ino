@@ -44,26 +44,6 @@ void setup() {
 
 	Serial.begin(9600);
 
-	delay(500);
-	digitalWrite(out1, HIGH);
-	delay(500);
-	digitalWrite(out1, LOW);
-
-	delay(500);
-	digitalWrite(out2, HIGH);
-	delay(500);
-	digitalWrite(out2, LOW);
-
-	delay(500);
-	digitalWrite(out2, HIGH);
-	delay(500);
-	digitalWrite(out2, LOW);
-
-	delay(1000);
-	digitalWrite(out1, HIGH);
-	digitalWrite(out2, HIGH);
-	digitalWrite(out3, HIGH);
-	delay(1000);
 	digitalWrite(out1, LOW);
 	digitalWrite(out2, LOW);
 	digitalWrite(out3, LOW);
@@ -78,39 +58,39 @@ void loop() {
 	val3B = digitalRead(pir3B);
 
 	if ( val1A && val1B ) {
-		delay(500);
+		delay(1000);
 		digitalWrite(out1, HIGH);
-		delay(500);
+		delay(1000);
 	} else {
-		delay(500);
+		delay(1000);
 
-		delay(500);
+		delay(1000);
 		digitalWrite(out1, LOW);
-		delay(500);
+		delay(1000);
 		digitalWrite(out1, LOW);
 	}
 	if ( val2A && val2B ) {
-		delay(500);
+		delay(1000);
 		digitalWrite(out2, HIGH);
-		delay(500);
+		delay(1000);
 	} else {
-		delay(500);
+		delay(1000);
 
-		delay(500);
+		delay(1000);
 		digitalWrite(out2, LOW);
-		delay(500);
+		delay(1000);
 		digitalWrite(out2, LOW);
 	}
 	if ( val3A && val3B ) {
-		delay(500);
+		delay(1000);
 		digitalWrite(out3, HIGH);
-		delay(500);
+		delay(1000);
 	} else {
-		delay(500);
+		delay(1000);
 
-		delay(500);
+		delay(1000);
 		digitalWrite(out3, LOW);
-		delay(500);
+		delay(1000);
 		digitalWrite(out3, LOW);
 	}
 }
