@@ -43,6 +43,30 @@ void setup() {
 	digitalWrite(ledPin, LOW);
 
 	Serial.begin(9600);
+
+	delay(500);
+	digitalWrite(out1, HIGH);
+	delay(500);
+	digitalWrite(out1, LOW);
+
+	delay(500);
+	digitalWrite(out2, HIGH);
+	delay(500);
+	digitalWrite(out2, LOW);
+
+	delay(500);
+	digitalWrite(out2, HIGH);
+	delay(500);
+	digitalWrite(out2, LOW);
+
+	delay(500);
+	digitalWrite(out1, HIGH);
+	digitalWrite(out2, HIGH);
+	digitalWrite(out3, HIGH);
+	delay(500);
+	digitalWrite(out1, LOW);
+	digitalWrite(out2, LOW);
+	digitalWrite(out3, LOW);
 }
 
 void loop() {
