@@ -66,14 +66,24 @@ void loop() {
 	//Serial.println(val3B);
 
 	if ( val1A && val1B ) {
-		Serial.println('Light 1 on');
-		analogWrite(out1, 255);
+		digitalWrite(out1, LOW);
+		delay(3000);
+		Serial.println("Light 1 on");
+		digitalWrite(out1, HIGH);
+		delay(3000);
 	}
 	if ( val2A && val2B ) {
-		Serial.println('Light 2 on');
-		analogWrite(out2, 255);
+		digitalWrite(out2, LOW);
+		delay(3000);
+		Serial.println("Light 2 on");
+		digitalWrite(out2, HIGH);
+		delay(3000);
 	}
 	if ( val3A && val3B ) {
-		analogWrite(out3, 255);
+		digitalWrite(out3, LOW);
+		delay(3000);
+		Serial.println("Light 3 on");
+		digitalWrite(out3, HIGH);
+		delay(3000);
 	}
 }
