@@ -43,12 +43,12 @@ void setup() {
 }
 
 void loop() {
-	val1A = digitalRead(pi1A);
-	val1B = digitalRead(pi1B);
-	val2A = digitalRead(pi2A);
-	val2B = digitalRead(pi2B);
-	val3A = digitalRead(pi3A);
-	val3B = digitalRead(pi3B);
+	val1A = digitalRead(pir1A);
+	val1B = digitalRead(pir1B);
+	val2A = digitalRead(pir2A);
+	val2B = digitalRead(pir2B);
+	val3A = digitalRead(pir3A);
+	val3B = digitalRead(pir3B);
 
 	if ( val1A && val1B ) {
 		analogWrite(out1, 255);
