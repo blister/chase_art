@@ -34,6 +34,7 @@ void setup() {
 	pinMode(pir2A, INPUT);
 	pinMode(pir2B, INPUT);
 	pinMode(pir3A, INPUT);
+	pinMode(pir3B, INPUT);
 
 	pinMode(out1, OUTPUT);
 	pinMode(out2, OUTPUT);
@@ -52,41 +53,19 @@ void loop() {
 	val3A = digitalRead(pir3A);
 	val3B = digitalRead(pir3B);
 
-	Serial.print("val1A:");
-	Serial.print(val1A);
-	Serial.print(" val1B:");
-	Serial.println(val1B);
-	//Serial.print("val2A:");
-	//Serial.print(val2A);
-	//Serial.print(" val2B:");
-	//Serial.println(val2B);
-	//Serial.print("val3A:");
-	//Serial.print(val3A);
-	//Serial.print(" val3B:");
-	//Serial.println(val3B);
-
 	if ( val1A && val1B ) {
-		digitalWrite(out1, LOW);
-		delay(3000);
-		Serial.println("Light 1 on");
 		digitalWrite(out1, HIGH);
-		delay(3000);
+	} else {
 		digitalWrite(out1, LOW);
 	}
 	if ( val2A && val2B ) {
-		digitalWrite(out2, LOW);
-		delay(3000);
-		Serial.println("Light 2 on");
 		digitalWrite(out2, HIGH);
-		delay(3000);
+	} else {
 		digitalWrite(out2, LOW);
 	}
 	if ( val3A && val3B ) {
-		digitalWrite(out3, LOW);
-		delay(3000);
-		Serial.println("Light 3 on");
 		digitalWrite(out3, HIGH);
-		delay(3000);
+	} else {
 		digitalWrite(out3, LOW);
 	}
 }
