@@ -58,12 +58,13 @@ void loop() {
 	val3B = digitalRead(pir3B);
 
 	if ( val1A && val1B ) {
+		Serial.println("Light 1 is on");
 		delay(1000);
 		digitalWrite(out1, HIGH);
 		delay(1000);
 	} else {
 		delay(1000);
-
+		Serial.println("Light 1 is off");
 		delay(1000);
 		digitalWrite(out1, LOW);
 		delay(1000);
