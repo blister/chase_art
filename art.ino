@@ -54,34 +54,28 @@ void loop() {
 	val3B = digitalRead(pir3B);
 
 	if ( val1A && val1B ) {
-		digitalWrite(out1, LOW);
 		delay(500);
 		digitalWrite(out1, HIGH);
 		delay(500);
 	} else {
-		digitalWrite(out1, HIGH);
 		delay(500);
 		digitalWrite(out1, LOW);
 		delay(500);
 	}
 	if ( val2A && val2B ) {
-		digitalWrite(out2, LOW);
 		delay(500);
 		digitalWrite(out2, HIGH);
 		delay(500);
 	} else {
-		digitalWrite(out2, HIGH);
 		delay(500);
 		digitalWrite(out2, LOW);
 		delay(500);
 	}
 	if ( val3A && val3B ) {
-		digitalWrite(out3, LOW);
 		delay(500);
 		digitalWrite(out3, HIGH);
 		delay(500);
 	} else {
-		digitalWrite(out3, HIGH);
 		delay(500);
 		digitalWrite(out3, LOW);
 		delay(500);
