@@ -59,7 +59,7 @@ void loop() {
 	Serial.print("pir1A: ");
 	Serial.print(val1A);
 	Serial.print("pir1B: ");
-	Serial.print(val1B);
+	Serial.println(val1B);
 	if ( val1A && val1B ) {
 
 		Serial.println("Light 1 is on");
