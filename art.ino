@@ -56,14 +56,14 @@ void loop() {
 	Serial.print(val1A);
 	Serial.print(" val1B:");
 	Serial.println(val1B);
-	Serial.print("val2A:");
-	Serial.print(val2A);
-	Serial.print(" val2B:");
-	Serial.println(val2B);
-	Serial.print("val3A:");
-	Serial.print(val3A);
-	Serial.print(" val3B:");
-	Serial.println(val3B);
+	//Serial.print("val2A:");
+	//Serial.print(val2A);
+	//Serial.print(" val2B:");
+	//Serial.println(val2B);
+	//Serial.print("val3A:");
+	//Serial.print(val3A);
+	//Serial.print(" val3B:");
+	//Serial.println(val3B);
 
 	if ( val1A && val1B ) {
 		analogWrite(out1, 255);
