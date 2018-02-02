@@ -71,7 +71,7 @@ void loop() {
 	}
 	if ( val2A && val2B ) {
 		Serial.println('Light 2 on');
-		digigalWrite(out2, HIGH);
+		digitalWrite(out2, HIGH);
 	}
 	if ( val3A && val3B ) {
 		analogWrite(out3, 255);
