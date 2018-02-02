@@ -66,10 +66,12 @@ void loop() {
 	//Serial.println(val3B);
 
 	if ( val1A && val1B ) {
+		Serial.println('Light 1 on');
 		analogWrite(out1, 255);
 	}
 	if ( val2A && val2B ) {
-		analogWrite(out2, 255);
+		Serial.println('Light 2 on');
+		digigalWrite(out2, HIGH);
 	}
 	if ( val3A && val3B ) {
 		analogWrite(out3, 255);
