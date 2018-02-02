@@ -59,8 +59,11 @@ void loop() {
 		delay(500);
 	} else {
 		delay(500);
+
+		delay(500);
 		digitalWrite(out1, LOW);
 		delay(500);
+		digitalWrite(out1, LOW);
 	}
 	if ( val2A && val2B ) {
 		delay(500);
@@ -68,8 +71,11 @@ void loop() {
 		delay(500);
 	} else {
 		delay(500);
+
+		delay(500);
 		digitalWrite(out2, LOW);
 		delay(500);
+		digitalWrite(out2, LOW);
 	}
 	if ( val3A && val3B ) {
 		delay(500);
@@ -77,7 +83,10 @@ void loop() {
 		delay(500);
 	} else {
 		delay(500);
+
+		delay(500);
 		digitalWrite(out3, LOW);
 		delay(500);
+		digitalWrite(out3, LOW);
 	}
 }
