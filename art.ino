@@ -40,6 +40,8 @@ void setup() {
 	pinMode(out3, OUTPUT);
 
 	digitalWrite(ledPin, LOW);
+
+	Serial.begin(9600);
 }
 
 void loop() {
@@ -49,6 +51,19 @@ void loop() {
 	val2B = digitalRead(pir2B);
 	val3A = digitalRead(pir3A);
 	val3B = digitalRead(pir3B);
+
+	Serial.print("val1A:");
+	Serial.print(val1A);
+	Serial.print(" val1B:");
+	Serial.println(val1B);
+	Serial.print("val2A:");
+	Serial.print(val2A);
+	Serial.print(" val2B:");
+	Serial.println(val2B);
+	Serial.print("val3A:");
+	Serial.print(val3A);
+	Serial.print(" val3B:");
+	Serial.println(val3B);
 
 	if ( val1A && val1B ) {
 		analogWrite(out1, 255);
