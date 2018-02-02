@@ -44,9 +44,9 @@ void setup() {
 
 	Serial.begin(9600);
 
-	digitalWrite(out1, LOW);
-	digitalWrite(out2, LOW);
-	digitalWrite(out3, LOW);
+	digitalWrite(out1, HIGH);
+	digitalWrite(out2, HIGH);
+	digitalWrite(out3, HIGH);
 }
 
 void loop() {
@@ -60,38 +60,27 @@ void loop() {
 	if ( val1A && val1B ) {
 		Serial.println("Light 1 is on");
 		delay(1000);
-		digitalWrite(out1, HIGH);
+		digitalWrite(out1, LOW);
 		delay(1000);
 	} else {
 		delay(1000);
 		Serial.println("Light 1 is off");
-		delay(1000);
-		digitalWrite(out1, LOW);
-		delay(1000);
-		digitalWrite(out1, LOW);
+		digitalWrite(out1, HIGH);
 	}
 	if ( val2A && val2B ) {
 		delay(1000);
-		digitalWrite(out2, HIGH);
+		digitalWrite(out2, LOW);
 		delay(1000);
 	} else {
 		delay(1000);
-
-		delay(1000);
-		digitalWrite(out2, LOW);
-		delay(1000);
-		digitalWrite(out2, LOW);
+		digitalWrite(out2, HIGH);
 	}
 	if ( val3A && val3B ) {
 		delay(1000);
-		digitalWrite(out3, HIGH);
+		digitalWrite(out3, LOW);
 		delay(1000);
 	} else {
 		delay(1000);
-
-		delay(1000);
-		digitalWrite(out3, LOW);
-		delay(1000);
-		digitalWrite(out3, LOW);
+		digitalWrite(out3, HIGH);
 	}
 }
